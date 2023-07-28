@@ -1,6 +1,6 @@
 import styled, {css} from "styled-components";
 
-import {LocationOn, Cake} from '../../styles/Icons'
+import {LocationOn, Cake, Link } from '../../styles/Icons'
 import Button from "../Button";
 export const Container = styled.div`
 
@@ -115,7 +115,9 @@ color: var(--gray);
 export const LocationIcon = styled(LocationOn) `
 ${iconCSS}
 `;
-
+export const LinkIcon = styled(Link) `
+${iconCSS}
+`;
 export const CakeIcon = styled(Cake) `
 ${iconCSS}
 `;
@@ -134,3 +136,5 @@ export const EditButton = styled(Button)`
     font-size: 15px;
  }
 `;
+export { Link };
+
