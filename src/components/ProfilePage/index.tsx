@@ -10,12 +10,16 @@ import {
   LocationIcon,
   CakeIcon,
   Followage,
-  EditButton
+  EditButton,
+  LinkIcon
 } from './styles';
 
 import Feed from '../Feed'
 
 const ProfilePage: React.FC = () => {
+  const handleClick = () => {
+
+  };
   return (
     <Container>
       <Banner>
@@ -29,9 +33,12 @@ const ProfilePage: React.FC = () => {
 
         <p>
         former swe intern
-  <span className="colored-text"> @Microsoft </span>
+        <a href="https://twitter.com/Microsoft" onClick={handleClick} style={{ textDecoration: 'none' }}>
+        <span className="colored-text">@Microsoft</span>
+      </a>{' '} 
    // cse '24 &  
-  <span className="colored-text"> @iitm_bs </span>
+   <a href="https://twitter.com/iitm_bs" onClick={handleClick} style={{ textDecoration: 'none' }}>
+        <span className="colored-text">@iitm_bs</span>      </a>{' '} 
    '25
 </p>
 
@@ -44,6 +51,11 @@ const ProfilePage: React.FC = () => {
           <li>
             <CakeIcon />
             Born April 5
+          </li>
+          <li>
+            <LinkIcon />
+            <a href="https://github.com/allelbhagya" onClick={handleClick} style={{ textDecoration: 'none' }}>
+        <span className="colored-text">https://github.com/allelbhagya</span>      </a>{' '} 
           </li>
         </ul>
 

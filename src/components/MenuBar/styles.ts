@@ -1,6 +1,6 @@
 import styled, {css} from 'styled-components';
 
-import {Home, Notifications, Email, FavoriteBorder, Person, ExitToApp, Rocketseat} from '../../styles/Icons'
+import {Home, Notifications, Email, FavoriteBorder, Person, ExitToApp, Rocketseat, Directions} from '../../styles/Icons'
 import x from './x.png'
 export const Container = styled.div`
 
@@ -156,6 +156,7 @@ display: none;
 
 export const HomeIcon = styled(Home)`${iconCSS}`;
 export const BellIcon = styled(Notifications)`${iconCSS}`;
+export const DirectionIcon = styled(Directions)`${iconCSS}`;
 export const EmailIcon = styled(Email)`${iconCSS}`;
 export const FavoriteIcon = styled(FavoriteBorder)`${iconCSS}`;
 export const ProfileIcon = styled(Person)`${iconCSS}`;

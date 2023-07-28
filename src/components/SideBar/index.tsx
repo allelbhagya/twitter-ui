@@ -4,6 +4,7 @@ import StickyBox from 'react-sticky-box';
 
 import List from '../List';
 import News from '../News';
+import Verify from '../Verified';
 import FollowSuggestion from '../FollowSuggestion';
 
 import {
@@ -24,22 +25,35 @@ const SideBar: React.FC = () => {
 
       <StickyBox>
         <Body>
+        <List
+            title="Get Verified"
+            elements={[<Verify />]}
+          />
           <List
-            title="
-            Who to follow"
+            title="You might like"
             elements={[
               <FollowSuggestion
                 name="X"
                 nickname="@X"
               />,
+              <FollowSuggestion
+              name="Microsoft"
+              nickname="@Microsoft"
+            />,
+            <FollowSuggestion
+            name="Google"
+            nickname="@Google"
+          />,
             ]}
           />
           <List
             title="What’s happening"
             elements={[<News />]}
           />
+
         </Body>
       </StickyBox>
+      
     </Container>
   );
 };

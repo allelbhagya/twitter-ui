@@ -15,7 +15,8 @@ import {
   ExitIcon,
   Botside,
   Avatar,
-  ProfileData
+  ProfileData,
+  DirectionIcon
 } from './styles';
 
 const MenuBar: React.FC = () => {
@@ -29,11 +30,11 @@ const MenuBar: React.FC = () => {
           <span>Home</span>
         </MenuButton>
         <MenuButton>
-          <BellIcon />
+          <FavoriteIcon />
           <span>Explore</span>
         </MenuButton>
         <MenuButton>
-          <FavoriteIcon />
+          <BellIcon />
           <span>Notifications</span>
         </MenuButton>
         <MenuButton>
@@ -45,7 +46,7 @@ const MenuBar: React.FC = () => {
           <span>Lists</span>
         </MenuButton>
         <MenuButton>
-          <BellIcon />
+          <FavoriteIcon />
           <span>Communities</span>
         </MenuButton>
         <MenuButton>
@@ -57,7 +58,7 @@ const MenuBar: React.FC = () => {
           <span>Profile</span>
         </MenuButton>
         <MenuButton >
-          <ProfileIcon />
+          <DirectionIcon />
           <span>More</span>
         </MenuButton>
 
